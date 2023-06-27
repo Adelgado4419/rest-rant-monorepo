@@ -21,7 +21,8 @@ function SignUpForm() {
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(user)
-		})
+		}).catch(err=>{
+		console.log(err)})
 
 		history.push(`/`)
 	}
